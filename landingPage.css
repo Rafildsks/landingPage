@@ -4,6 +4,8 @@
     padding: 0;
     outline: 0;
     box-sizing: border-box;
+    list-style: none;
+    font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -26,10 +28,67 @@ header {
     gap: 4px;
 }
 
-
-
 .btn-cart {
     background-color: #F1E9C9;
     padding: 8px;
     border-radius: 6px;
+}
+
+.section-banner {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    padding: 104px 160px 80px;
+    background-image: url(../landingPage/asset/Background.svg);
+    background-size: cover;
+}
+
+.div-banner {
+    width: 47%;
+}
+
+h1 {
+    font-family: "Baloo 2", sans-serif;
+}
+
+.titulo-banner {
+    margin-bottom: 16px;
+    font-size: 48px;
+    line-height: 130%;
+}
+
+.texto-banner {
+    font-size: 20px;
+    margin-bottom: 66px;
+}
+
+.carrinho-banner {
+
+}
+.bloco-banner {
+
+}
+.temporizador-banner {
+
+}
+.cafe-banner {
+
+}
+
+.img-banner {
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.ul-banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.lista-banner {
+    text-wrap: nowrap;
+    display: flex;
+    gap: 12px;
+    align-items: center;
 }
