@@ -2,338 +2,388 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Coffee Delivery</title>
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <link rel="stylesheet" href="produtos.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Delivery</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="produtos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-  <header class="bg-[#F3F2F2] flex justify-between py-8 px-40 sticky top-0 z-50 shadow-lg">
-    <img src="/asset/Logo.svg" alt="logo do café" />
-    <div class="flex gap-3">
-      <div class="bg-[#ebe5f9] rounded-md items-center gap-1 p-2 flex">
-        <img src="/asset/localização.svg" alt="localização" />
-        <span>Porto Alegre, RS</span>
-      </div>
-      <button class="bg-[#f1e9c9] p-2 rounded-md">
-        <img src="/asset/carrinhoAmarelo.svg" alt="carrinho de buscar" />
-      </button>
-    </div>
-  </header>
-
-  <main class="px-40 pt-10">
-    <section>
-      <h1 class="text-[32px] font-['Baloo_2'] font-extrabold mb-[54px]">Nossos cafés</h1>
-
-      <div class="grid grid-cols-4 gap-16 py-8">
-
-        <div class="bg-[#F3F2F2] w-[256px] relative pt-25 p-5 rounded-tr-4xl rounded-bl-4xl text-center">
-          <img class="absolute left-1/2 -translate-x-1/2 -top-10 w-[120px]" src="/asset/Expresso Tradicional.svg"
-            alt="Expresso Tradicional" />
-          <span class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">TRADICIONAL</span>
-          <span></span>
-          <h2 class="font-['Baloo_2'] font-bold text-lg mt-4 mb-2">Expresso Tradicional</h2>
-          <p class="text-sm text-gray-500 mb-2"> O tradicional café feito com água quente e grãos moídos</p>
-          <div class="flex items-center justify-between w-full mt-4">
-            <span class="text-sm">R$ <span class=" text-2xl font-['Baloo_2'] font-extrabold">9,90</span></span>
-            <div class="flex items-center gap-2">
-              <div class="flex items-center bg-gray-200 px-2 py-1 rounded-md gap-2">
-                <button class="text-purple-700 w-3.5">-</button>
-                <span>1</span>
-                <button class="text-purple-700 w-3.5">+</button>
-              </div>
-              <button class="text-purple-700 p-3 rounded-md">
-                <img class="w-5" src="/asset/carrinho do café.svg" alt="" />
-              </button>
+    <header class="bg-[#F3F2F2] flex justify-between py-8 px-40 sticky top-0 z-50 shadow-lg">
+        <img src="/asset/Logo.svg" alt="logo do café" />
+        <div class="flex gap-3">
+            <div class="bg-[#ebe5f9] rounded-md items-center gap-1 p-2 flex">
+                <img src="/asset/localização.svg" alt="localização" />
+                <span>Porto Alegre, RS</span>
             </div>
-          </div>
+            <button class="bg-[#f1e9c9] p-2 rounded-md">
+                <img src="/asset/carrinhoAmarelo.svg" alt="carrinho de buscar" />
+            </button>
         </div>
+    </header>
 
-        <div class="bg-[#F3F2F2] w-[256px] relative pt-25 p-5 rounded-tr-4xl rounded-bl-4xl text-center">
-          <img class="absolute left-1/2 -translate-x-1/2 -top-10 w-[120px]" src="/asset/Expresso Americano.svg"
-            alt="Expresso Americano" />
-          <span class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">TRADICIONAL</span>
-          <span></span>
-          <h2 class="font-['Baloo_2'] font-bold text-lg mt-4 mb-2">Expresso Americano</h2>
-          <p class="text-sm text-gray-500 mb-2">Expresso diluído, menos intenso que o tradicional</p>
-          <div class="flex items-center justify-between w-full mt-4">
-            <span class="text-sm">R$ <span class=" text-2xl font-['Baloo_2'] font-extrabold">9,90</span></span>
-            <div class="flex items-center gap-2">
-              <div class="flex items-center bg-gray-200 px-2 py-1 rounded-md gap-2">
-                <button>-</button>
-                <span>1</span>
-                <button>+</button>
-              </div>
-              <button class="text-purple-700 p-3 rounded-md">
-                <img class="w-5" src="/asset/carrinho do café.svg" alt="" />
-              </button>
+    <main class="px-40 pt-10">
+        <section>
+            <h1 class="text-[32px] font-['Baloo_2'] font-extrabold mb-[54px]">Nossos cafés</h1>
+
+            <div class="grid grid-cols-4 gap-16 py-8">
+
+                <div class="bg-[#F3F2F2] w-[256px] relative pt-25 p-5 rounded-tr-4xl rounded-bl-4xl text-center">
+                    <img class="absolute left-1/2 -translate-x-1/2 -top-10 w-[120px]"
+                        src="/asset/Expresso Tradicional.svg" alt="Expresso Tradicional" />
+                    <span
+                        class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">TRADICIONAL</span>
+                    <span></span>
+                    <h2 class="font-['Baloo_2'] font-bold text-lg mt-4 mb-2">Expresso Tradicional</h2>
+                    <p class="text-sm text-gray-500 mb-2"> O tradicional café feito com água quente e grãos moídos</p>
+                    <div class="flex items-center justify-between w-full mt-4">
+                        <span class="text-sm">R$ <span
+                                class=" text-2xl font-['Baloo_2'] font-extrabold">9,90</span></span>
+                        <div class="flex items-center gap-2">
+                            <div class="flex items-center bg-gray-200 px-2 py-1 rounded-md gap-2">
+                                <button class="text-purple-700 w-3.5">-</button>
+                                <span>1</span>
+                                <button class="text-purple-700 w-3.5">+</button>
+                            </div>
+                            <button class="text-purple-700 p-3 rounded-md">
+                                <img class="w-5" src="/asset/carrinho do café.svg" alt="" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#F3F2F2] w-[256px] relative pt-25 p-5 rounded-tr-4xl rounded-bl-4xl text-center">
+                    <img class="absolute left-1/2 -translate-x-1/2 -top-10 w-[120px]"
+                        src="/asset/Expresso Americano.svg" alt="Expresso Americano" />
+                    <span
+                        class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">TRADICIONAL</span>
+                    <span></span>
+                    <h2 class="font-['Baloo_2'] font-bold text-lg mt-4 mb-2">Expresso Americano</h2>
+                    <p class="text-sm text-gray-500 mb-2">Expresso diluído, menos intenso que o tradicional</p>
+                    <div class="flex items-center justify-between w-full mt-4">
+                        <span class="text-sm">R$ <span
+                                class=" text-2xl font-['Baloo_2'] font-extrabold">9,90</span></span>
+                        <div class="flex items-center gap-2">
+                            <div class="flex items-center bg-gray-200 px-2 py-1 rounded-md gap-2">
+                                <button>-</button>
+                                <span>1</span>
+                                <button>+</button>
+                            </div>
+                            <button class="text-purple-700 p-3 rounded-md">
+                                <img class="w-5" src="/asset/carrinho do café.svg" alt="" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#F3F2F2] w-[256px] relative pt-25 p-5 rounded-tr-4xl rounded-bl-4xl text-center">
+                    <img class="absolute left-1/2 -translate-x-1/2 -top-10 w-[120px]" src="/asset/Expresso Cremoso.svg"
+                        alt="" />
+                    <span
+                        class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">TRADICIONAL</span>
+                    <span></span>
+                    <h2 class="font-['Baloo_2'] font-bold text-lg mt-4 mb-2">Expresso Cremoso</h2>
+                    <p class="text-sm text-gray-500 mb-2">Café expresso tradicional com espuma cremosa</p>
+                    <div class="flex items-center justify-between w-full mt-4">
+                        <span class="text-sm">R$ <span
+                                class=" text-2xl font-['Baloo_2'] font-extrabold">9,90</span></span>
+                        <div class="flex items-center gap-2">
+                            <div class="flex items-center bg-gray-200 px-2 py-1 rounded-md gap-2">
+                                <button>-</button>
+                                <span>1</span>
+                                <button>+</button>
+                            </div>
+                            <button class="text-purple-700 p-3 rounded-md">
+                                <img class="w-5" src="/asset/carrinho do café.svg" alt="" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#F3F2F2] w-[256px] relative pt-25 p-5 rounded-tr-4xl rounded-bl-4xl text-center">
+                    <img class="absolute left-1/2 -translate-x-1/2 -top-10 w-[120px]" src="/asset/Expresso Gelado.svg"
+                        alt="" />
+                    <span
+                        class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">TRADICIONAL</span>
+                    <span
+                        class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">GELADO</span>
+                    <h2 class="font-['Baloo_2'] font-bold text-lg mt-4 mb-2">Expresso Gelado</h2>
+                    <p class="text-sm text-gray-500 mb-2">Bebida preparada com café expresso e cubos de gelo</p>
+                    <div class="flex items-center justify-between w-full mt-4">
+                        <span class="text-sm">R$ <span
+                                class=" text-2xl font-['Baloo_2'] font-extrabold">9,90</span></span>
+                        <div class="flex items-center gap-2">
+                            <div class="flex items-center bg-gray-200 px-2 py-1 rounded-md gap-2">
+                                <button>-</button>
+                                <span>1</span>
+                                <button>+</button>
+                            </div>
+                            <button class="text-purple-700 p-3 rounded-md">
+                                <img class="w-5" src="/asset/carrinho do café.svg" alt="" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#F3F2F2] w-[256px] relative pt-25 p-5 rounded-tr-4xl rounded-bl-4xl text-center">
+                    <img class="absolute left-1/2 -translate-x-1/2 -top-10 w-[120px]" src="/asset/Café com Leite.svg"
+                        alt="" />
+                    <span
+                        class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">TRADICIONAL</span>
+                    <span class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">COM
+                        LEITE</span>
+                    <h2 class="font-['Baloo_2'] font-bold text-lg mt-4 mb-2">Café com Leite</h2>
+                    <p class="text-sm text-gray-500 mb-2">Meio a meio de expresso tradicional com leite vaporizado</p>
+                    <div class="flex items-center justify-between w-full mt-4">
+                        <span class="text-sm">R$ <span
+                                class=" text-2xl font-['Baloo_2'] font-extrabold">9,90</span></span>
+                        <div class="flex items-center gap-2">
+                            <div class="flex items-center bg-gray-200 px-2 py-1 rounded-md gap-2">
+                                <button>-</button>
+                                <span>1</span>
+                                <button>+</button>
+                            </div>
+                            <button class="text-purple-700 p-3 rounded-md">
+                                <img class="w-5" src="/asset/carrinho do café.svg" alt="" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#F3F2F2] w-[256px] relative pt-25 p-5 rounded-tr-4xl rounded-bl-4xl text-center">
+                    <img class="absolute left-1/2 -translate-x-1/2 -top-10 w-[120px]" src="/asset/Latte.svg" alt="" />
+                    <span
+                        class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">TRADICIONAL</span>
+                    <span class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">COM
+                        LEITE</span>
+                    <h2 class="font-['Baloo_2'] font-bold text-lg mt-4 mb-2">Latte</h2>
+                    <p class="text-sm text-gray-500 mb-2">Uma dose de café expresso com o dobro de leite e espuma
+                        cremosa</p>
+                    <div class="flex items-center justify-between w-full mt-4">
+                        <span class="text-sm">R$ <span
+                                class=" text-2xl font-['Baloo_2'] font-extrabold">9,90</span></span>
+                        <div class="flex items-center gap-2">
+                            <div class="flex items-center bg-gray-200 px-2 py-1 rounded-md gap-2">
+                                <button>-</button>
+                                <span>1</span>
+                                <button>+</button>
+                            </div>
+                            <button class="text-purple-700 p-3 rounded-md">
+                                <img class="w-5" src="/asset/carrinho do café.svg" alt="" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#F3F2F2] w-[256px] relative pt-25 p-5 rounded-tr-4xl rounded-bl-4xl text-center">
+                    <img class="absolute left-1/2 -translate-x-1/2 -top-10 w-[120px]" src="/asset/Capuccino.svg"
+                        alt="" />
+                    <span
+                        class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">TRADICIONAL</span>
+                    <span class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">COM
+                        LEITE</span>
+                    <h2 class="font-['Baloo_2'] font-bold text-lg mt-4 mb-2">Capuccino</h2>
+                    <p class="text-sm text-gray-500 mb-2">Bebida com canela feita de doses iguais de café, leite e
+                        espuma</p>
+                    <div class="flex items-center justify-between w-full mt-4">
+                        <span class="text-sm">R$ <span
+                                class=" text-2xl font-['Baloo_2'] font-extrabold">9,90</span></span>
+                        <div class="flex items-center gap-2">
+                            <div class="flex items-center bg-gray-200 px-2 py-1 rounded-md gap-2">
+                                <button>-</button>
+                                <span>1</span>
+                                <button>+</button>
+                            </div>
+                            <button class="text-purple-700 p-3 rounded-md">
+                                <img class="w-5" src="/asset/carrinho do café.svg" alt="" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#F3F2F2] w-[256px] relative pt-25 p-5 rounded-tr-4xl rounded-bl-4xl text-center">
+                    <img class="absolute left-1/2 -translate-x-1/2 -top-10 w-[120px]" src="/asset/Macchiato.svg"
+                        alt="" />
+                    <span
+                        class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">TRADICIONAL</span>
+                    <span class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">COM
+                        LEITE</span>
+                    <h2 class="font-['Baloo_2'] font-bold text-lg mt-4 mb-2">Macchiato</h2>
+                    <p class="text-sm text-gray-500 mb-2">Café expresso misturado com um pouco de leite quente e espuma
+                    </p>
+                    <div class="flex items-center justify-between w-full mt-4">
+                        <span class="text-sm">R$ <span
+                                class=" text-2xl font-['Baloo_2'] font-extrabold">9,90</span></span>
+                        <div class="flex items-center gap-2">
+                            <div class="flex items-center bg-gray-200 px-2 py-1 rounded-md gap-2">
+                                <button>-</button>
+                                <span>1</span>
+                                <button>+</button>
+                            </div>
+                            <button class="text-purple-700 p-3 rounded-md">
+                                <img class="w-5" src="/asset/carrinho do café.svg" alt="" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#F3F2F2] w-[256px] relative pt-25 p-5 rounded-tr-4xl rounded-bl-4xl text-center">
+                    <img class="absolute left-1/2 -translate-x-1/2 -top-10 w-[120px]" src="/asset/Mocaccino.svg"
+                        alt="" />
+                    <span
+                        class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">TRADICIONAL</span>
+                    <span class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">COM
+                        LEITE</span>
+                    <h2 class="font-['Baloo_2'] font-bold text-lg mt-4 mb-2">Mocaccino</h2>
+                    <p class="text-sm text-gray-500 mb-2">Café expresso com calda de chocolate, pouco leite e espuma</p>
+                    <div class="flex items-center justify-between w-full mt-4">
+                        <span class="text-sm">R$ <span
+                                class=" text-2xl font-['Baloo_2'] font-extrabold">9,90</span></span>
+                        <div class="flex items-center gap-2">
+                            <div class="flex items-center bg-gray-200 px-2 py-1 rounded-md gap-2">
+                                <button>-</button>
+                                <span>1</span>
+                                <button>+</button>
+                            </div>
+                            <button class="text-purple-700 p-3 rounded-md">
+                                <img class="w-5" src="/asset/carrinho do café.svg" alt="" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#F3F2F2] w-[256px] relative pt-25 p-5 rounded-tr-4xl rounded-bl-4xl text-center">
+                    <img class="absolute left-1/2 -translate-x-1/2 -top-10 w-[120px]" src="/asset/Chocolate Quente.svg"
+                        alt="" />
+                    <span
+                        class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">ESPECIAL</span>
+                    <span class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">COM
+                        LEITE</span>
+                    <h2 class="font-['Baloo_2'] font-bold text-lg mt-4 mb-2">Chocolate Quente</h2>
+                    <p class="text-sm text-gray-500 mb-2">Bebida feita com chocolate dissolvido no leite quente e café
+                    </p>
+                    <div class="flex items-center justify-between w-full mt-4">
+                        <span class="text-sm">R$ <span
+                                class=" text-2xl font-['Baloo_2'] font-extrabold">9,90</span></span>
+                        <div class="flex items-center gap-2">
+                            <div class="flex items-center bg-gray-200 px-2 py-1 rounded-md gap-2">
+                                <button>-</button>
+                                <span>1</span>
+                                <button>+</button>
+                            </div>
+                            <button class="text-purple-700 p-3 rounded-md">
+                                <img class="w-5" src="/asset/carrinho do café.svg" alt="" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#F3F2F2] w-[256px] relative pt-25 p-5 rounded-tr-4xl rounded-bl-4xl text-center">
+                    <img class="absolute left-1/2 -translate-x-1/2 -top-10 w-[120px]" src="/asset/Cubano.svg" alt="" />
+                    <span
+                        class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">ESPECIAL</span>
+                    <span
+                        class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">ALCOÓLICO</span>
+                    <span
+                        class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">GELADO</span>
+                    <h2 class="font-['Baloo_2'] font-bold text-lg mt-4 mb-2">Cubano</h2>
+                    <p class="text-sm text-gray-500 mb-2">Drink gelado de café expresso com rum, creme de leite e
+                        hortelã</p>
+                    <div class="flex items-center justify-between w-full mt-4">
+                        <span class="text-sm">R$ <span
+                                class=" text-2xl font-['Baloo_2'] font-extrabold">9,90</span></span>
+                        <div class="flex items-center gap-2">
+                            <div class="flex items-center bg-gray-200 px-2 py-1 rounded-md gap-2">
+                                <button>-</button>
+                                <span>1</span>
+                                <button>+</button>
+                            </div>
+                            <button class="text-purple-700 p-3 rounded-md">
+                                <img class="w-5" src="/asset/carrinho do café.svg" alt="" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#F3F2F2] w-[256px] relative pt-25 p-5 rounded-tr-4xl rounded-bl-4xl text-center">
+                    <img class="absolute left-1/2 -translate-x-1/2 -top-10 w-[120px]" src="/asset/Havaiano.svg"
+                        alt="" />
+                    <span
+                        class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">ESPECIAL</span>
+                    <span></span>
+                    <h2 class="font-['Baloo_2'] font-bold text-lg mt-4 mb-2">Havaiano</h2>
+                    <p class="text-sm text-gray-500 mb-2">Bebida adocicada preparada com café e leite de coco</p>
+                    <div class="flex items-center justify-between w-full mt-4">
+                        <span class="text-sm">R$ <span
+                                class=" text-2xl font-['Baloo_2'] font-extrabold">9,90</span></span>
+                        <div class="flex items-center gap-2">
+                            <div class="flex items-center bg-gray-200 px-2 py-1 rounded-md gap-2">
+                                <button>-</button>
+                                <span>1</span>
+                                <button>+</button>
+                            </div>
+                            <button class="text-purple-700 p-3 rounded-md">
+                                <img class="w-5" src="/asset/carrinho do café.svg" alt="" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#F3F2F2] w-[256px] relative pt-25 p-5 rounded-tr-4xl rounded-bl-4xl text-center">
+                    <img class="absolute left-1/2 -translate-x-1/2 -top-10 w-[120px]" src="/asset/Árabe.svg" alt="" />
+                    <span
+                        class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">ESPECIAL</span>
+                    <span></span>
+                    <h2 class="font-['Baloo_2'] font-bold text-lg mt-4 mb-2">Árabe</h2>
+                    <p class="text-sm text-gray-500 mb-2">Bebida preparada com grãos de café árabe e especiarias</p>
+                    <div class="flex items-center justify-between w-full mt-4">
+                        <span class="text-sm">R$ <span
+                                class=" text-2xl font-['Baloo_2'] font-extrabold">9,90</span></span>
+                        <div class="flex items-center gap-2">
+                            <div class="flex items-center bg-gray-200 px-2 py-1 rounded-md gap-2">
+                                <button>-</button>
+                                <span>1</span>
+                                <button>+</button>
+                            </div>
+                            <button class="text-purple-700 p-3 rounded-md">
+                                <img class="w-5" src="/asset/carrinho do café.svg" alt="" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-[#F3F2F2] w-[256px] relative pt-25 p-5 rounded-tr-4xl rounded-bl-4xl text-center">
+                    <img class="absolute left-1/2 -translate-x-1/2 -top-10 w-[120px]" src="/asset/Irlandês.svg"
+                        alt="" />
+                    <span
+                        class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">ESPECIAL</span>
+                    <span
+                        class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">ALCOÓLICO</span>
+                    <h2 class="font-['Baloo_2'] font-bold text-lg mt-4 mb-2">Irlandês</h2>
+                    <p class="text-sm text-gray-500 mb-2">Bebida a base de café, uísque irlandês, açúcar e chantilly</p>
+                    <div class="flex items-center justify-between w-full mt-4">
+                        <span class="text-sm">R$ <span
+                                class=" text-2xl font-['Baloo_2'] font-extrabold">9,90</span></span>
+                        <div class="flex items-center gap-2">
+                            <div class="flex items-center bg-gray-200 px-2 py-1 rounded-md gap-2">
+                                <button>-</button>
+                                <span>1</span>
+                                <button>+</button>
+                            </div>
+                            <button class="text-purple-700 p-3 rounded-md">
+                                <img class="w-5" src="/asset/carrinho do café.svg" alt="" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-          </div>
-        </div>
-
-        <div class="bg-[#F3F2F2] w-[256px] relative pt-25 p-5 rounded-tr-4xl rounded-bl-4xl text-center">
-          <img class="absolute left-1/2 -translate-x-1/2 -top-10 w-[120px]" src="/asset/Expresso Cremoso.svg" alt="" />
-          <span class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">TRADICIONAL</span>
-          <span></span>
-          <h2 class="font-['Baloo_2'] font-bold text-lg mt-4 mb-2">Expresso Cremoso</h2>
-          <p class="text-sm text-gray-500 mb-2">Café expresso tradicional com espuma cremosa</p>
-          <div class="flex items-center justify-between w-full mt-4">
-            <span class="text-sm">R$ <span class=" text-2xl font-['Baloo_2'] font-extrabold">9,90</span></span>
-            <div class="flex items-center gap-2">
-              <div class="flex items-center bg-gray-200 px-2 py-1 rounded-md gap-2">
-                <button>-</button>
-                <span>1</span>
-                <button>+</button>
-              </div>
-              <button class="text-purple-700 p-3 rounded-md">
-                <img class="w-5" src="/asset/carrinho do café.svg" alt="" />
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-[#F3F2F2] w-[256px] relative pt-25 p-5 rounded-tr-4xl rounded-bl-4xl text-center">
-          <img class="absolute left-1/2 -translate-x-1/2 -top-10 w-[120px]" src="/asset/Expresso Gelado.svg" alt="" />
-          <span class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">TRADICIONAL</span>
-          <span class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">GELADO</span>
-          <h2 class="font-['Baloo_2'] font-bold text-lg mt-4 mb-2">Expresso Gelado</h2>
-          <p class="text-sm text-gray-500 mb-2">Bebida preparada com café expresso e cubos de gelo</p>
-          <div class="flex items-center justify-between w-full mt-4">
-            <span class="text-sm">R$ <span class=" text-2xl font-['Baloo_2'] font-extrabold">9,90</span></span>
-            <div class="flex items-center gap-2">
-              <div class="flex items-center bg-gray-200 px-2 py-1 rounded-md gap-2">
-                <button>-</button>
-                <span>1</span>
-                <button>+</button>
-              </div>
-              <button class="text-purple-700 p-3 rounded-md">
-                <img class="w-5" src="/asset/carrinho do café.svg" alt="" />
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-[#F3F2F2] w-[256px] relative pt-25 p-5 rounded-tr-4xl rounded-bl-4xl text-center">
-          <img class="absolute left-1/2 -translate-x-1/2 -top-10 w-[120px]" src="/asset/Café com Leite.svg" alt="" />
-          <span class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">TRADICIONAL</span>
-          <span class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">COM LEITE</span>
-          <h2 class="font-['Baloo_2'] font-bold text-lg mt-4 mb-2">Café com Leite</h2>
-          <p class="text-sm text-gray-500 mb-2">Meio a meio de expresso tradicional com leite vaporizado</p>
-          <div class="flex items-center justify-between w-full mt-4">
-            <span class="text-sm">R$ <span class=" text-2xl font-['Baloo_2'] font-extrabold">9,90</span></span>
-            <div class="flex items-center gap-2">
-              <div class="flex items-center bg-gray-200 px-2 py-1 rounded-md gap-2">
-                <button>-</button>
-                <span>1</span>
-                <button>+</button>
-              </div>
-              <button class="text-purple-700 p-3 rounded-md">
-                <img class="w-5" src="/asset/carrinho do café.svg" alt="" />
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-[#F3F2F2] w-[256px] relative pt-25 p-5 rounded-tr-4xl rounded-bl-4xl text-center">
-          <img class="absolute left-1/2 -translate-x-1/2 -top-10 w-[120px]" src="/asset/Latte.svg" alt="" />
-          <span class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">TRADICIONAL</span>
-          <span class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">COM LEITE</span>
-          <h2 class="font-['Baloo_2'] font-bold text-lg mt-4 mb-2">Latte</h2>
-          <p class="text-sm text-gray-500 mb-2">Uma dose de café expresso com o dobro de leite e espuma cremosa</p>
-          <div class="flex items-center justify-between w-full mt-4">
-            <span class="text-sm">R$ <span class=" text-2xl font-['Baloo_2'] font-extrabold">9,90</span></span>
-            <div class="flex items-center gap-2">
-              <div class="flex items-center bg-gray-200 px-2 py-1 rounded-md gap-2">
-                <button>-</button>
-                <span>1</span>
-                <button>+</button>
-              </div>
-              <button class="text-purple-700 p-3 rounded-md">
-                <img class="w-5" src="/asset/carrinho do café.svg" alt="" />
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-[#F3F2F2] w-[256px] relative pt-25 p-5 rounded-tr-4xl rounded-bl-4xl text-center">
-          <img class="absolute left-1/2 -translate-x-1/2 -top-10 w-[120px]" src="/asset/Capuccino.svg" alt="" />
-          <span class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">TRADICIONAL</span>
-          <span class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">COM LEITE</span>
-          <h2 class="font-['Baloo_2'] font-bold text-lg mt-4 mb-2">Capuccino</h2>
-          <p class="text-sm text-gray-500 mb-2">Bebida com canela feita de doses iguais de café, leite e espuma</p>
-          <div class="flex items-center justify-between w-full mt-4">
-            <span class="text-sm">R$ <span class=" text-2xl font-['Baloo_2'] font-extrabold">9,90</span></span>
-            <div class="flex items-center gap-2">
-              <div class="flex items-center bg-gray-200 px-2 py-1 rounded-md gap-2">
-                <button>-</button>
-                <span>1</span>
-                <button>+</button>
-              </div>
-              <button class="text-purple-700 p-3 rounded-md">
-                <img class="w-5" src="/asset/carrinho do café.svg" alt="" />
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-[#F3F2F2] w-[256px] relative pt-25 p-5 rounded-tr-4xl rounded-bl-4xl text-center">
-          <img class="absolute left-1/2 -translate-x-1/2 -top-10 w-[120px]" src="/asset/Macchiato.svg" alt="" />
-          <span class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">TRADICIONAL</span>
-          <span class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">COM LEITE</span>
-          <h2 class="font-['Baloo_2'] font-bold text-lg mt-4 mb-2">Macchiato</h2>
-          <p class="text-sm text-gray-500 mb-2">Café expresso misturado com um pouco de leite quente e espuma</p>
-          <div class="flex items-center justify-between w-full mt-4">
-            <span class="text-sm">R$ <span class=" text-2xl font-['Baloo_2'] font-extrabold">9,90</span></span>
-            <div class="flex items-center gap-2">
-              <div class="flex items-center bg-gray-200 px-2 py-1 rounded-md gap-2">
-                <button>-</button>
-                <span>1</span>
-                <button>+</button>
-              </div>
-              <button class="text-purple-700 p-3 rounded-md">
-                <img class="w-5" src="/asset/carrinho do café.svg" alt="" />
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-[#F3F2F2] w-[256px] relative pt-25 p-5 rounded-tr-4xl rounded-bl-4xl text-center">
-          <img class="absolute left-1/2 -translate-x-1/2 -top-10 w-[120px]" src="/asset/Mocaccino.svg" alt="" />
-          <span class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">TRADICIONAL</span>
-          <span class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">COM LEITE</span>
-          <h2 class="font-['Baloo_2'] font-bold text-lg mt-4 mb-2">Mocaccino</h2>
-          <p class="text-sm text-gray-500 mb-2">Café expresso com calda de chocolate, pouco leite e espuma</p>
-          <div class="flex items-center justify-between w-full mt-4">
-            <span class="text-sm">R$ <span class=" text-2xl font-['Baloo_2'] font-extrabold">9,90</span></span>
-            <div class="flex items-center gap-2">
-              <div class="flex items-center bg-gray-200 px-2 py-1 rounded-md gap-2">
-                <button>-</button>
-                <span>1</span>
-                <button>+</button>
-              </div>
-              <button class="text-purple-700 p-3 rounded-md">
-                <img class="w-5" src="/asset/carrinho do café.svg" alt="" />
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-[#F3F2F2] w-[256px] relative pt-25 p-5 rounded-tr-4xl rounded-bl-4xl text-center">
-          <img class="absolute left-1/2 -translate-x-1/2 -top-10 w-[120px]" src="/asset/Chocolate Quente.svg" alt="" />
-          <span class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">ESPECIAL</span>
-          <span class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">COM LEITE</span>
-          <h2 class="font-['Baloo_2'] font-bold text-lg mt-4 mb-2">Chocolate Quente</h2>
-          <p class="text-sm text-gray-500 mb-2">Bebida feita com chocolate dissolvido no leite quente e café</p>
-          <div class="flex items-center justify-between w-full mt-4">
-            <span class="text-sm">R$ <span class=" text-2xl font-['Baloo_2'] font-extrabold">9,90</span></span>
-            <div class="flex items-center gap-2">
-              <div class="flex items-center bg-gray-200 px-2 py-1 rounded-md gap-2">
-                <button>-</button>
-                <span>1</span>
-                <button>+</button>
-              </div>
-              <button class="text-purple-700 p-3 rounded-md">
-                <img class="w-5" src="/asset/carrinho do café.svg" alt="" />
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-[#F3F2F2] w-[256px] relative pt-25 p-5 rounded-tr-4xl rounded-bl-4xl text-center">
-          <img class="absolute left-1/2 -translate-x-1/2 -top-10 w-[120px]" src="/asset/Cubano.svg" alt="" />
-          <span class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">ESPECIAL</span>
-          <span class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">ALCOÓLICO</span>
-          <span class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">GELADO</span>
-          <h2 class="font-['Baloo_2'] font-bold text-lg mt-4 mb-2">Cubano</h2>
-          <p class="text-sm text-gray-500 mb-2">Drink gelado de café expresso com rum, creme de leite e hortelã</p>
-          <div class="flex items-center justify-between w-full mt-4">
-            <span class="text-sm">R$ <span class=" text-2xl font-['Baloo_2'] font-extrabold">9,90</span></span>
-            <div class="flex items-center gap-2">
-              <div class="flex items-center bg-gray-200 px-2 py-1 rounded-md gap-2">
-                <button>-</button>
-                <span>1</span>
-                <button>+</button>
-              </div>
-              <button class="text-purple-700 p-3 rounded-md">
-                <img class="w-5" src="/asset/carrinho do café.svg" alt="" />
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-[#F3F2F2] w-[256px] relative pt-25 p-5 rounded-tr-4xl rounded-bl-4xl text-center">
-          <img class="absolute left-1/2 -translate-x-1/2 -top-10 w-[120px]" src="/asset/Havaiano.svg" alt="" />
-          <span class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">ESPECIAL</span>
-          <span></span>
-          <h2 class="font-['Baloo_2'] font-bold text-lg mt-4 mb-2">Havaiano</h2>
-          <p class="text-sm text-gray-500 mb-2">Bebida adocicada preparada com café e leite de coco</p>
-          <div class="flex items-center justify-between w-full mt-4">
-            <span class="text-sm">R$ <span class=" text-2xl font-['Baloo_2'] font-extrabold">9,90</span></span>
-            <div class="flex items-center gap-2">
-              <div class="flex items-center bg-gray-200 px-2 py-1 rounded-md gap-2">
-                <button>-</button>
-                <span>1</span>
-                <button>+</button>
-              </div>
-              <button class="text-purple-700 p-3 rounded-md">
-                <img class="w-5" src="/asset/carrinho do café.svg" alt="" />
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-[#F3F2F2] w-[256px] relative pt-25 p-5 rounded-tr-4xl rounded-bl-4xl text-center">
-          <img class="absolute left-1/2 -translate-x-1/2 -top-10 w-[120px]" src="/asset/Árabe.svg" alt="" />
-          <span class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">ESPECIAL</span>
-          <span></span>
-          <h2 class="font-['Baloo_2'] font-bold text-lg mt-4 mb-2">Árabe</h2>
-          <p class="text-sm text-gray-500 mb-2">Bebida preparada com grãos de café árabe e especiarias</p>
-          <div class="flex items-center justify-between w-full mt-4">
-            <span class="text-sm">R$ <span class=" text-2xl font-['Baloo_2'] font-extrabold">9,90</span></span>
-            <div class="flex items-center gap-2">
-              <div class="flex items-center bg-gray-200 px-2 py-1 rounded-md gap-2">
-                <button>-</button>
-                <span>1</span>
-                <button>+</button>
-              </div>
-              <button class="text-purple-700 p-3 rounded-md">
-                <img class="w-5" src="/asset/carrinho do café.svg" alt="" />
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="bg-[#F3F2F2] w-[256px] relative pt-25 p-5 rounded-tr-4xl rounded-bl-4xl text-center">
-          <img class="absolute left-1/2 -translate-x-1/2 -top-10 w-[120px]" src="/asset/Irlandês.svg" alt="" />
-          <span class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">ESPECIAL</span>
-          <span class="bg-[#F1E9C9] text-[#C47F17] px-2 py-1 rounded-full font-bold text-[10px] mt-3">ALCOÓLICO</span>
-          <h2 class="font-['Baloo_2'] font-bold text-lg mt-4 mb-2">Irlandês</h2>
-          <p class="text-sm text-gray-500 mb-2">Bebida a base de café, uísque irlandês, açúcar e chantilly</p>
-          <div class="flex items-center justify-between w-full mt-4">
-            <span class="text-sm">R$ <span class=" text-2xl font-['Baloo_2'] font-extrabold">9,90</span></span>
-            <div class="flex items-center gap-2">
-              <div class="flex items-center bg-gray-200 px-2 py-1 rounded-md gap-2">
-                <button>-</button>
-                <span>1</span>
-                <button>+</button>
-              </div>
-              <button class="text-purple-700 p-3 rounded-md">
-                <img class="w-5" src="/asset/carrinho do café.svg" alt="" />
-              </button>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section>
-  </main>
+        </section>
+    </main>
 </body>
-
-</html>
