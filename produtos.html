@@ -12,12 +12,18 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <header class="bg-[#F3F2F2] flex justify-between py-8 px-40 sticky top-0 z-50 shadow-lg">
+    <header class="bg-[#F3F2F2] flex justify-between py-8 px-5 md:px-10 lg:px-30 2lx:px-40 sticky top-0 z-50 shadow-lg">
         <img src="/asset/Logo.svg" alt="logo do café" />
-        <div class="flex gap-3">
+        <div class="md:hidden text-2xl text-[#8047f8]">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="hidden sm:flex gap-3">
             <div class="bg-[#ebe5f9] rounded-md items-center gap-1 p-2 flex">
                 <img src="/asset/localização.svg" alt="localização" />
                 <span>Porto Alegre, RS</span>
@@ -28,11 +34,12 @@
         </div>
     </header>
 
-    <main class="px-40 pt-10">
+    <main class="px-5 md:px-10 lg:px-30 2xl:px-40 pt-10">
         <section>
             <h1 class="text-[32px] font-['Baloo_2'] font-extrabold mb-[54px]">Nossos cafés</h1>
 
-            <div class="grid grid-cols-4 gap-16 py-8">
+            <div
+                class="grid grid-cols-1 min-[602px]:grid-cols-2 min-[896px]:grid-cols-3 2xl:grid-cols-4 gap-16 py-8 justify-items-center">
 
                 <div class="bg-[#F3F2F2] w-[256px] relative pt-25 p-5 rounded-tr-4xl rounded-bl-4xl text-center">
                     <img class="absolute left-1/2 -translate-x-1/2 -top-10 w-[120px]"
